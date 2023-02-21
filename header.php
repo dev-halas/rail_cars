@@ -22,6 +22,7 @@
 		<h1>test Kryu push</h1>
 
 		<h2>test kamil</h2>
+		<h2>test kamil</h2>
 		
 		<!-- LOGO URL -->
 		<h1><a href="<?php echo esc_url(home_url('/')) ?>"> LOGO URL</a></h1>
