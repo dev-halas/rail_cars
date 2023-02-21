@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "build": "webpack --watch",
+        "build": "webpack --watch --watch-poll",
         "clean": "rimraf public",
         "start": "webpack-dev-server --content-base"
     },
@@ -11,13 +11,11 @@
     "author": "",
     "license": "ISC",
     "description": "",
-    "dependencies": {},
     "devDependencies": {
         "css-loader": "^4.2.2",
         "cssnano-webpack-plugin": "^1.0.3",
         "html-webpack-plugin": "^4.4.1",
         "mini-css-extract-plugin": "^0.11.1",
-        "node-sass": "^4.14.1",
         "optimize-css-assets-webpack-plugin": "^5.0.4",
         "purgecss-webpack-plugin": "^2.3.0",
         "rimraf": "^3.0.2",
