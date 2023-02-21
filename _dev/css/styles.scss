@@ -2,8 +2,8 @@
 
 /* ------ Layouts ------ */
 
-@import "./layout/grid.scss";
+@import "./base/reset.scss";
+@import "./base/core.scss";
 
 /* ------ Components ------ */
 
-@import "./components/swiper.scss";
