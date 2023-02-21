@@ -19,7 +19,7 @@
 	<body <?php body_class()?>>
 		<h1> Header </h1>
 
-		<h1>test kryu</h1>
+		<h1>test Kryu push</h1>
 		
 		<!-- LOGO URL -->
 		<h1><a href="<?php echo esc_url(home_url('/')) ?>"> LOGO URL</a></h1>
