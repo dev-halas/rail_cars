@@ -25,6 +25,7 @@
 		<h2>test kamil</h2>
 		<h3>sdf</h3>
 		<h3>sdf</h3>
+		<div></div>
 		
 		<!-- LOGO URL -->
 		<h1><a href="<?php echo esc_url(home_url('/')) ?>"> LOGO URL</a></h1>
