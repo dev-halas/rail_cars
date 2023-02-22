@@ -9,6 +9,7 @@
     @include responsive('tablet') {
         background: linear-gradient(180deg, rgba(41,41,41,0.6) 0%, rgba(250,250,250,0) 90%);
     }
+    margin-bottom: 100vh;
 }
 
 .heroImg {
