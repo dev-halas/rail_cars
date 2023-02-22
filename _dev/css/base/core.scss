@@ -2,15 +2,22 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 10vh;
+    overflow-x: hidden;
 }
 
+$yellow: #FDCC12;
+$dark: #292929;
+$light: #F5F7FF;
+$white: #fff;
+
 body {
-    font-family: '', cursive;
+    font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 1.35;
-    background-color: #E7E7E5;
+    font-weight: normal;
+    font-size: clamp(14px, 0.83vw, 20px);
+    line-height: 1.5;
+    background-color: $light;
+    height: 100%;
 }
 h1, h2, h3, h4 {
     font-family: '', sans-serif;
@@ -70,16 +77,6 @@ $breakpoints: (
     }
 }
 
-body {
-    @include responsive('large') {
-        font-size: 18px;
-    }
-    @include responsive('tablet') {
-        font-size: 16px;
-    }
-}
-
-
 $container: 80vw;
 $containerMobile: 90vw;
 
@@ -96,5 +93,13 @@ $containerMobile: 90vw;
     html {
         margin-top: 0px !important;
     }
+}
+
+.textYellow {
+    color: $yellow;
+}
+
+.textWhite {
+    color: $white;
 }
 

@@ -1,0 +1,122 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-height: -webkit-fill-available;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, rgba(41,41,41,0.5) 0%, rgba(250,250,250,0) 30%);
+    @include responsive('tablet') {
+        background: linear-gradient(180deg, rgba(41,41,41,0.6) 0%, rgba(250,250,250,0) 90%);
+    }
+}
+
+.heroImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    z-index: -1;
+    @include responsive('tablet') {
+        object-position: center;
+    }
+}
+
+.heroInner {
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding-left: 5vw;
+    border-left: 2px solid $yellow;
+
+    @include responsive('tablet') {
+        max-width: 90vw;
+        padding-left: 0;
+        border: 0;
+    }
+
+    @include responsive('small') {
+        grid-template-columns: 1fr;
+        max-width: 90vw;
+    }
+}
+
+.heroInner--text {
+    position: relative;
+    h1 {
+        font-size: clamp(36px, 5vw, 100px);
+        line-height: 1;
+    }
+
+    p {
+        margin-top: 40px;
+        max-width: 500px;
+    }
+}
+
+.heroInner--tiles {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    justify-items: center;
+    @include responsive('small') {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.heroInner--tile {
+    color: $white;
+    padding: 3vw 1.5vw 1vw 1.5vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid $yellow;
+    width: 24vw;
+    
+
+    p {
+        width: 200px;
+        text-align: right;
+        font-weight: 500;
+        font-size: clamp(12px, 1vw, 24px);
+        @include responsive('small') {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    svg {
+        fill: $white;
+        width: 2vw;
+        @include responsive('small') {
+            width: 24px;
+        }
+    }
+
+    @include responsive('small') {
+        width: 100%;
+        flex-direction: column;
+        padding: 30px 10px 15px 10px;
+    }
+}
+
+.heroInner--tile:hover {
+    background-color: $yellow;
+    color: $dark;
+
+    svg {
+        fill: $dark
+    }
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
