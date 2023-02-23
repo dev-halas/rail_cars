@@ -1,0 +1,267 @@
+:root {
+    --container-padding: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --container-padding: 35px;
+    }
+}
+
+$container-padding: var(--container-padding);
+
+h2 {
+    font-size: clamp(24px, 5vw, 50px);
+    line-height: 1.1;
+
+    @include responsive('tablet') {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+h4 {
+    font-size: clamp(17px, 5vw, 30px);
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+}
+
+.wrapper-default {
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+}
+
+.about-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-section {
+    padding: calc(#{$container-padding} * 2);
+
+    @include responsive('tablet') {
+        padding: $container-padding;
+    }
+}
+
+.about-wrapper {
+    @extend .wrapper-default;
+    background-color: $dark;
+    padding: $container-padding;
+    padding-left: calc(#{$container-padding} + 15px);
+
+    @include responsive('tablet') {
+        padding: $container-padding;
+    }
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    padding: $container-padding 0;
+    gap: 10vw;
+    border-top: solid 2px $white;
+    border-bottom: solid 2px $white;
+
+    @include responsive('tablet') {
+        flex-direction: column;
+    }
+
+    p {
+        color: $white
+    }
+}
+
+//
+
+.about-vagon-wrapper {
+    @extend .wrapper-default;
+    padding-top: calc(#{$container-padding} * 2);
+
+    @include responsive('tablet') {
+        padding-bottom: calc(#{$container-padding} * 2);
+    }
+
+    .vagonImg {
+        @extend .about-img;
+    }
+}
+
+// 
+
+.about-offer-wrapper {
+    @extend .wrapper-default;
+    padding: calc(#{$container-padding} * 4);
+    padding-inline: 0;
+
+    @include responsive('tablet') {
+        padding: $container-padding 0;
+    }
+}
+
+.about-offer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+
+    @include responsive('tablet') {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .about-img-container {
+        width: 100%;
+        position: relative;
+
+        @include responsive('tablet') {
+            width: 80%;
+            margin-bottom: 5vw
+        }
+
+        .offerImg {
+            @extend .about-img;
+        }
+    }
+}
+
+.img-label {
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    background-color: $white;
+    width: 85%;
+    height: 55%;
+    padding: calc(#{$container-padding} / 2 + 15px) calc(#{$container-padding} / 2);
+    padding-right: calc(#{$container-padding} / 2 + 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include responsive('tablet') {
+        bottom: 0;
+        height: 35%;
+    }
+
+    &::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: scaleY(1.0);
+        background-color: white;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+
+        @include responsive('tablet') {
+            transform-origin: bottom;
+        }
+      }
+
+    &:hover {
+        color: $dark;
+
+        .about-offer-arrow {
+            fill: $dark;
+            transition: fill 0.3s ease;
+        }
+
+        &:hover::before {
+            content: "";
+            z-index: -1;
+            transform: scaleY(1.5);
+            background-color: $yellow;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+
+            @include responsive('tablet') {
+                transform: scaleY(1.25);
+            }
+        }
+    }
+
+    .about-offer-arrow {
+        fill: $yellow;
+        transition: fill 0.3s ease;
+    }
+}
+
+.about-track-wrapper {
+    @extend .wrapper-default;
+
+    .trackImg {
+        @extend .about-img;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: unset;
+        z-index: -1;
+    }
+}
+
+.about-realisation-wrapper {
+    @extend .wrapper-default;
+    padding-top: calc(#{$container-padding} * 5);
+
+    .about-realisation-container {
+        position: relative;
+
+        .white-item {
+            position: absolute;
+            left: 2vw;
+            top: 0;
+            width: 65%;
+            height: 100%;
+            background-color: $white;
+            z-index: -1;
+
+            @include responsive('tablet') {
+                width: 100%;
+            }
+        }
+        
+    }
+
+    .about-realisation-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: calc(#{$container-padding} * 2);
+
+        @include responsive('tablet') {
+            flex-direction: column;
+
+            h2 {
+                margin-bottom: 8vw;
+            }
+        }
+    }
+
+    .about-realisation-images {
+        display: flex;
+
+        .realisationImg {
+            @extend .about-img;
+        }
+    }
+
+    svg {
+        fill: $dark;
+        transition: fill 0.3s ease;
+
+        &.about-realisation-arrow-right {
+            transform: rotate(180deg);
+            margin-left: 30px;
+        }
+
+        &:hover {
+            fill: $yellow;
+            transition: fill 0.3s ease;
+        }
+    }
+}
