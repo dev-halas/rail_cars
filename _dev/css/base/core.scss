@@ -11,7 +11,7 @@ $light: #F5F7FF;
 $white: #fff;
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: "elza",sans-serif;
     overflow-x: hidden;
     font-weight: normal;
     font-size: clamp(14px, 0.83vw, 20px);
@@ -101,5 +101,17 @@ $containerMobile: 90vw;
 
 .textWhite {
     color: $white;
+}
+
+.textUpper {
+    text-transform: uppercase;
+}
+
+.ls3 {
+    letter-spacing: 3px;
+}
+
+.fontBold {
+    font-weight: 700;
 }
 

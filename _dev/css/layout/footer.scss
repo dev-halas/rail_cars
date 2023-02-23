@@ -1,0 +1,78 @@
+.footer {
+    position: relative;
+    padding: 80px 0;
+    border-bottom: 40px solid $yellow;
+}
+
+.footerInner {
+    max-width: 70vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    @include responsive('tablet'){
+        max-width: 90vw;
+    }
+    @include responsive('small'){
+        grid-template-columns: 1fr;
+    }
+}
+
+.footerLogo { 
+    img {
+        max-height: 100px;
+        width: auto;
+    }
+}
+
+.footerCol {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footerCopy {
+    position: absolute;
+    left: 5vw;
+    bottom: 0;
+    padding-bottom: 80px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    @include responsive('tablet'){
+        writing-mode: unset;
+        -webkit-writing-mode: unset;
+        -ms-writing-mode: unset;
+    }
+
+    @include responsive('small'){
+        bottom: 20px;
+        padding-bottom: 0;
+    }
+}
+
+.footerRight {
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 80px 0;
+    @include responsive('tablet'){
+        right: 2.5vw;
+    }
+}
+
+.footerRight--text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    a {
+        color: $yellow;
+    }
+}
+
