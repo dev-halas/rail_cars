@@ -21,7 +21,7 @@ h2 {
 }
 
 h4 {
-    font-size: clamp(17px, 5vw, 30px);
+    font-size: clamp(17px, 5vw, 25px);
     line-height: 1.5;
     letter-spacing: 0.8px;
 }
@@ -40,11 +40,37 @@ h4 {
 
 .about-section {
     padding: calc(#{$container-padding} * 2);
+    position: relative;
 
     @include responsive('tablet') {
         padding: $container-padding;
     }
 }
+
+// Absolute positioning images
+
+.subtraction1, 
+.subtraction2 {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0%;
+    scale: 1.2;
+    transform-origin: center center;
+    height: 60%;
+
+    @include responsive('tablet') {
+        width: unset;
+    }
+}
+
+.subtraction2 {
+    top: 2.5%;
+}
+
+// Header with text
 
 .about-wrapper {
     @extend .wrapper-default;
@@ -74,7 +100,7 @@ h4 {
     }
 }
 
-//
+// Vagon image
 
 .about-vagon-wrapper {
     @extend .wrapper-default;
@@ -89,11 +115,11 @@ h4 {
     }
 }
 
-// 
+// Offer with images
 
 .about-offer-wrapper {
     @extend .wrapper-default;
-    padding: calc(#{$container-padding} * 4);
+    padding: calc(#{$container-padding} * 2);
     padding-inline: 0;
 
     @include responsive('tablet') {
@@ -111,85 +137,86 @@ h4 {
         justify-content: center;
         gap: 0;
     }
-
-    .about-img-container {
-        width: 100%;
-        position: relative;
-
-        @include responsive('tablet') {
-            width: 80%;
-            margin-bottom: 5vw
-        }
-
-        .offerImg {
-            @extend .about-img;
-        }
-    }
 }
 
-.img-label {
-    position: absolute;
-    bottom: -25%;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
-    background-color: $white;
-    width: 85%;
-    height: 55%;
-    padding: calc(#{$container-padding} / 2 + 15px) calc(#{$container-padding} / 2);
-    padding-right: calc(#{$container-padding} / 2 + 30px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.about-img-container {
+    width: 100%;
+    position: relative;
 
     @include responsive('tablet') {
-        bottom: 0;
-        height: 35%;
+        margin-bottom: 5vw
     }
 
-    &::before {
-        content: "";
-        z-index: -1;
+    .offerImg {
+        @extend .about-img;
+    }
+
+    .img-label {
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        transform: scaleY(1.0);
-        background-color: white;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-
+        bottom: -25%;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        background-color: $white;
+        width: 85%;
+        height: 65%;
+        padding: calc(#{$container-padding} / 2 + 15px) calc(#{$container-padding} / 2);
+        padding-right: calc(#{$container-padding} / 2 + 30px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
         @include responsive('tablet') {
-            transform-origin: bottom;
+            bottom: 0;
+            height: 35%;
         }
-      }
-
-    &:hover {
-        color: $dark;
-
-        .about-offer-arrow {
-            fill: $dark;
-            transition: fill 0.3s ease;
-        }
-
-        &:hover::before {
+    
+        &::before {
             content: "";
             z-index: -1;
-            transform: scaleY(1.5);
-            background-color: $yellow;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transform: scaleY(1.0);
+            background-color: white;
             transition: transform 0.3s ease, background-color 0.3s ease;
-
+    
             @include responsive('tablet') {
+                transform-origin: bottom;
+            }
+          }
+    
+        &:hover {
+            color: $dark;
+    
+            .about-offer-arrow {
+                fill: $dark;
+                transition: fill 0.3s ease;
+            }
+    
+            &:hover::before {
+                content: "";
+                z-index: -1;
                 transform: scaleY(1.25);
+                background-color: $yellow;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+    
+                @include responsive('tablet') {
+                    transform: scaleY(1.25);
+                }
             }
         }
-    }
-
-    .about-offer-arrow {
-        fill: $yellow;
-        transition: fill 0.3s ease;
+    
+        .about-offer-arrow {
+            fill: $yellow;
+            transition: fill 0.3s ease;
+        }
     }
 }
+
+// Track image
 
 .about-track-wrapper {
     @extend .wrapper-default;
@@ -199,69 +226,7 @@ h4 {
         position: absolute;
         left: 0;
         right: 0;
-        height: unset;
+        height: 150px;
         z-index: -1;
-    }
-}
-
-.about-realisation-wrapper {
-    @extend .wrapper-default;
-    padding-top: calc(#{$container-padding} * 5);
-
-    .about-realisation-container {
-        position: relative;
-
-        .white-item {
-            position: absolute;
-            left: 2vw;
-            top: 0;
-            width: 65%;
-            height: 100%;
-            background-color: $white;
-            z-index: -1;
-
-            @include responsive('tablet') {
-                width: 100%;
-            }
-        }
-        
-    }
-
-    .about-realisation-items {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: calc(#{$container-padding} * 2);
-
-        @include responsive('tablet') {
-            flex-direction: column;
-
-            h2 {
-                margin-bottom: 8vw;
-            }
-        }
-    }
-
-    .about-realisation-images {
-        display: flex;
-
-        .realisationImg {
-            @extend .about-img;
-        }
-    }
-
-    svg {
-        fill: $dark;
-        transition: fill 0.3s ease;
-
-        &.about-realisation-arrow-right {
-            transform: rotate(180deg);
-            margin-left: 30px;
-        }
-
-        &:hover {
-            fill: $yellow;
-            transition: fill 0.3s ease;
-        }
     }
 }

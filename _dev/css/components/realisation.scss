@@ -1,0 +1,96 @@
+.about-realisation-wrapper {
+    @extend .wrapper-default;
+    padding: calc(#{$container-padding} * 2) 0;
+
+    @include responsive('tablet') {
+        padding-top: calc(#{$container-padding} * 5);
+    }
+
+    .about-realisation-container {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 2vw;
+            top: 0;
+            width: 65%;
+            height: 100%;
+            background-color: $white;
+            z-index: -1;
+
+            @include responsive('tablet') {
+                width: 100%;
+                left: 0;
+            }
+        }
+        
+    }
+
+    .about-realisation-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: calc(#{$container-padding} * 2);
+        padding-right: $container-padding;
+
+        @include responsive('tablet') {
+            flex-direction: column;
+            padding: $container-padding;
+            padding-top: calc(#{$container-padding} * 2);
+
+            h2 {
+                margin-bottom: 8vw;
+            }
+        }
+    }
+
+    .about-button-container {
+        @include responsive('tablet') {
+            display: none;
+        }
+
+        button {
+            all: unset;
+            cursor: pointer;
+        
+            &:hover svg {
+                fill: $yellow;
+                transition: fill 0.3s ease;
+            }
+        }
+    
+        svg {
+            fill: $dark;
+            transition: fill 0.3s ease;
+    
+            &.about-realisation-arrow-right {
+                transform: rotate(180deg);
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .about-realisation-images {
+        height: 350px;
+        position: relative;
+
+        .realisationImg {
+            @extend .about-img;
+            transition: transform 0.3s ease-in-out;
+            user-select: none;
+        }
+    }
+
+    .slide {
+        width: 100%;
+        max-width: 800px;
+        height: 350px;
+        position: absolute;
+        transition: transform 0.5s;
+    }
+
+    .grabbing .slide img {
+        transform: scale(0.9);
+    }
+}
