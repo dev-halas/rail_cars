@@ -1,0 +1,140 @@
+:root {
+    --container-padding: 70px;
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --container-padding: 35px;
+    }
+}
+
+$container-padding: var(--container-padding);
+
+h3 {
+    font-size: clamp(21px, 5vw, 30px);
+    line-height: 1.3;
+    letter-spacing: 0.8px;
+    margin-bottom: calc(#{$container-padding} / 2);
+    transition: color 0.3s ease;
+}
+
+.offer-text {
+    background-color: $white;
+    padding: $container-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5vw;
+    position: absolute;
+    left: 25%;
+    top: $container-padding;
+    z-index: 1;
+
+    @include responsive('tablet') {
+        flex-direction: column;
+        position: static;
+        margin-top: calc(#{$container-padding} * 2);
+    }
+
+    @include responsive('small') {
+        padding-inline: 0;
+
+        & > * {
+            width: 90vw;
+            margin: auto;
+        }
+    }
+}
+
+.offer-section {
+    width: 100%;
+    padding-top: calc(#{$container-padding} * 2);
+
+    @include responsive('small') {
+        padding-top: $container-padding;
+    }
+}
+
+.offer-wrapper {
+    position: relative;
+    margin-bottom: calc(#{$container-padding} * 7);
+
+    @include responsive('tablet') {
+        margin-bottom: calc(#{$container-padding} * 2);
+    }
+
+    .offer-img {
+        max-width: unset;
+        object-fit: contain;
+
+        @include responsive('tablet') {
+            width: 60%;
+            margin: auto;
+        }
+
+        @include responsive('small') {
+            width: 90vw;
+        }
+    }
+}
+
+.offer-regeneration-text {
+    @extend .offer-text;
+    bottom: calc(#{$container-padding} * -1);
+}
+
+.offer-repair-text {
+    @extend .offer-text;
+    flex-direction: column;
+}
+
+.offer-regeneration-effect {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    padding: 0 calc(#{$container-padding} / 2);
+
+    @include responsive('tablet') {
+        position: static;
+    }
+
+    @include responsive('small') {
+        flex-direction: column;
+    }
+}
+
+.offer-repair-effect {
+    display: flex;
+    gap: 1vw;
+
+    @include responsive('small') {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.offer-regeneration-before-after {
+    padding: calc(#{$container-padding} / 2);
+    padding-bottom: $container-padding;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    @include responsive('small') {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &:hover {
+        background-color: $yellow;
+        transition: background-color 0.3s ease;
+
+        h3 {
+            color: $dark;
+            transition: color 0.3s ease;
+        }
+    }
+}
