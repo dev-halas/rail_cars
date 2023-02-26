@@ -30,17 +30,21 @@
                 <p>W ofercie mamy naprawę wagonów towarowych na wszystkich poziomach utrzymania. Naprawiamy wagony o różnych typach min. samowyładowcze, węglarki, platformy oraz cysterny. Wagony naprawiane są zgodnie z obowiązującymi przepisami oraz wymaganiami klienta.</p>
             </div>
             <div class="offer-repair-effect">
-                <div>
-                    <img src="<?php echo THEME_URL; ?>_dev/img/repair-1.jpg" alt="zestawy kołow">
+                <div class="offer-repair-effect-container">
+                    <div>
+                        <img src="<?php echo THEME_URL; ?>_dev/img/repair-1.jpg" alt="zestawy kołow">
+                    </div>
+                    <div>
+                        <img src="<?php echo THEME_URL; ?>_dev/img/repair-2.jpg" alt="zestawy kołow">
+                    </div>
                 </div>
-                <div>
-                    <img src="<?php echo THEME_URL; ?>_dev/img/repair-2.jpg" alt="zestawy kołow">
-                </div>
-                <div>
-                    <img src="<?php echo THEME_URL; ?>_dev/img/repair-3.jpg" alt="zestawy kołow">
-                </div>
-                <div>
-                    <img src="<?php echo THEME_URL; ?>_dev/img/repair-4.jpg" alt="zestawy kołow">
+                <div class="offer-repair-effect-container">
+                    <div>
+                        <img src="<?php echo THEME_URL; ?>_dev/img/repair-3.jpg" alt="zestawy kołow">
+                    </div>
+                    <div>
+                        <img src="<?php echo THEME_URL; ?>_dev/img/repair-4.jpg" alt="zestawy kołow">
+                    </div>
                 </div>
             </div>
         </div>
