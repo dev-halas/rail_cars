@@ -1,4 +1,4 @@
-<section class="hero" style="">
+<section class="hero">
     <img src="<?php echo THEME_URL; ?>_dev/img/hero-bg.jpg" alt="heroImg" class="heroImg">
     
     <div class="heroInner">
