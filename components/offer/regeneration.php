@@ -19,7 +19,7 @@
         </div>
     </div>
 </section>
-<section>
+<section id="offer-repair">
     <div class="offer-wrapper">
         <div>
             <img src="<?php echo THEME_URL; ?>_dev/img/offer-2.jpg" alt="wagon na torze" class="offer-img">
@@ -47,6 +47,43 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section id="offer-rental">
+    <div class="offer-wrapper">
+        <div>
+            <img src="<?php echo THEME_URL; ?>_dev/img/rental-main.jpg" alt="wagon na torze" class="offer-img-right">
+        </div>
+        <div class="offer-rental-text">
+            <div>
+                <h3>Wynajem wagownów towarowych</h3>
+                <p>W swojej ofercie posiadamy wynajem wagonów towarowych. Posiadamy w swojej flocie wagony do przewozu materiałów sypkich min. kruszywa, węgla oraz materiałów płynnych. Spółka dysponuje wagonami samowyładowczymi, węglarkami platformami oraz cysternami. Firma cały czas prężnie powiększa swoją flotę.</p>
+            </div>
+            <div class="offer-rental-images">
+                <img src="<?php echo THEME_URL; ?>_dev/img/rental1.jpg" alt="rental1">
+                <img src="<?php echo THEME_URL; ?>_dev/img/rental2.jpg" alt="rental2">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="offer-sell">
+    <div class="offer-full">
+        <div class="offer-sell-text">
+            <div>
+                <h3>Sprzedaż części kolejowych</h3>
+                <p>Spółka prowadzi sprzedaż części kolejowych przeznaczonych do naprawy oraz po naprawie. W naszej ofercie można znaleźć wózki oraz ramy wagonowe o typach 25TN, 1XTa oraz 2XT. Posiadamy różnego typu zderzaki wagonowe oraz urządzenia cięgłowe. </p>
+            </div>
+        </div>
+        <div class="offer-sell-images">
+            <img src="<?php echo THEME_URL; ?>_dev/img/os1.jpg" alt="" class="div1">
+            <img src="<?php echo THEME_URL; ?>_dev/img/os2.jpg" alt="" class="div2">
+            <img src="<?php echo THEME_URL; ?>_dev/img/os3.jpg" alt="" class="div3">
+            <img src="<?php echo THEME_URL; ?>_dev/img/os4.jpg" alt="" class="div4">
+            <img src="<?php echo THEME_URL; ?>_dev/img/os5.jpg" alt="" class="div5">
+            <img src="<?php echo THEME_URL; ?>_dev/img/os6.jpg" alt="" class="div6">
         </div>
     </div>
 </section>

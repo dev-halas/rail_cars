@@ -26,9 +26,10 @@ h3 {
     align-items: flex-start;
     gap: 5vw;
     position: absolute;
-    left: 25%;
+    
     top: $container-padding;
     z-index: 1;
+
 
     @include responsive('tablet') {
         flex-direction: column;
@@ -81,11 +82,23 @@ h3 {
 .offer-regeneration-text {
     @extend .offer-text;
     bottom: calc(#{$container-padding} * -1);
+    left: 25%;
+    margin-right: 5%;
+
+    @include responsive('tablet') {
+        margin: auto;
+    }
 }
 
 .offer-repair-text {
     @extend .offer-text;
     flex-direction: column;
+    left: 25%;
+    margin-right: 5%;
+
+    @include responsive('tablet') {
+        margin: auto;
+    }
 }
 
 .offer-regeneration-effect {
@@ -143,4 +156,99 @@ h3 {
             transition: color 0.3s ease;
         }
     }
+}
+
+
+.offer-rental-text {
+    @extend .offer-text;
+    left: 5%;
+    margin-right: 25%;
+    flex-direction: column;
+
+    @include responsive('tablet') {
+        width: 90vw;
+        margin: auto;
+    }
+
+    @include responsive('small') {
+        width: 100%;
+        margin: auto;
+    }
+
+    > div {
+        display: flex;
+        gap: 50px;
+        @include responsive('tablet') {
+            flex-direction: column;
+        }
+    }
+
+    .offer-rental-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+.offer-img-right {
+    @extend .offer-img;
+    margin-left: auto;
+}
+
+.offer-full {
+    position: relative;
+    margin-bottom: calc(#{$container-padding} * 2);
+}
+
+.offer-sell-text {
+    width: 90%;
+    margin: auto;
+    background-color: $white;
+    padding: $container-padding;
+    position: relative;
+    z-index: 1;
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        gap: 10%;
+
+        @include responsive('tablet') {
+            flex-direction: column;
+        }
+    }
+
+    @include responsive('tablet') {
+        flex-direction: column;
+    }
+}
+
+.offer-sell-images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: -8%;
+
+    @include responsive('tablet') {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 10px;
+    }
+}
+    
+.div1 { grid-area: 1 / 1 / 5 / 3; }
+.div2 { grid-area: 2 / 3 / 4 / 4; }
+.div3 { grid-area: 2 / 4 / 4 / 5; }
+.div4 { grid-area: 4 / 3 / 6 / 4; }
+.div5 { grid-area: 4 / 4 / 6 / 5; }
+.div6 { grid-area: 1 / 5 / 5 / 7; }
+
+@include responsive('tablet') {
+    .div1 { grid-area: 1 / 1 / 5 / 3; }
+    .div2 { grid-area: 5 / 1 / 7 / 2; }
+    .div3 { grid-area: 5 / 2 / 7 / 3; }
+    .div4 { grid-area: 7 / 1 / 9 / 2; }
+    .div5 { grid-area: 7 / 2 / 9 / 3; }
+    .div6 { grid-area: 9 / 1 / 13 / 3; }
 }
