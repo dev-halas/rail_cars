@@ -201,11 +201,12 @@ function initMap() {
   
     });
     const contentString =
-      '<div id="mapContent">' +
-      'Procold s.c.' + '<br>' +
-      'ul. Leszczyce 10, ' + '<br>' +
-      '63-200 Jarocin' +
-      "</div>";
+        '<div id="mapContent">' +
+            'Rail-Cars Sp. z o.o.' + '<br>' +
+            'Oddział Krotoszyn' + '<br>' +
+            'ul. Benicka 39' + '<br>' +
+            '63-700 Krotoszyn' +
+        '</div>';
   
     const infowindow = new google.maps.InfoWindow({
       content: contentString,
@@ -213,26 +214,27 @@ function initMap() {
     });
 
     const contentString2 =
-      '<div id="mapContent">' +
-      'Procold s.c.' + '<br>' +
-      'ul. Leszczyce 10, ' + '<br>' +
-      '63-200 Jarocin' +
-      "</div>";
+        '<div id="mapContent">' +
+            'Rail-Cars Sp. z o.o.' + '<br>' +
+            'Zakład Jaworzno' + '<br>' +
+            'ul. Bukowska 91' + '<br>' +
+            '43-602 Jaworzno' +
+        '</div>';
   
     const infowindow2 = new google.maps.InfoWindow({
-      content: contentString,
+      content: contentString2,
       maxWidth: 300,
     });
 
     const contentString3 =
-      '<div id="mapContent">' +
-      'Procold s.c.' + '<br>' +
-      'ul. Leszczyce 10, ' + '<br>' +
-      '63-200 Jarocin' +
-      "</div>";
+        '<div id="mapContent">' +
+            'Rail-Cars Sp. z o.o.' + '<br>' +
+            'Ul. Sikorskiego 111/315' + '<br>' +
+            '66-400 Gorzów Wielkopolski' + 
+        '</div>';
   
     const infowindow3 = new google.maps.InfoWindow({
-      content: contentString,
+      content: contentString3,
       maxWidth: 300,
     });
   

@@ -236,3 +236,28 @@ h4 {
         z-index: -1;
     }
 }
+
+
+.aboutCert {
+    @extend .wrapper-default;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    align-items: center;
+    padding-top: 80px;
+
+    p {
+        max-width: 400px;
+    }
+
+    @include responsive('small') {
+        grid-template-columns: 1fr;
+    }
+}
+
+.aboutCert--images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}

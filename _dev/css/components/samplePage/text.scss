@@ -1,0 +1,23 @@
+.page-template-samplePage {
+    .header {
+        background-color: $dark;
+    }
+
+    .header.--active {
+        background-color: transparent;
+    }
+}
+
+.samplePage {
+    position: relative;
+    padding: 200px 0 100px 0;
+}
+
+.samplePage--inner {
+    max-width: 70vw; 
+    margin: auto;
+
+    p {
+        margin-bottom: 28px;
+    }
+}

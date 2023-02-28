@@ -3,7 +3,7 @@
 	wp_footer(); 
 ?>
 </body>
-<footer class="footer">
+<footer class="footer" id="contact">
 	<div class="footerCopy">
 		© Copyrights 2023 Rail-cars
 	</div>
@@ -44,36 +44,36 @@
 				e: a.kulinska@rail-cars.pl<br/>
 			</div>
 			<div class="footerCol--text">
-				<strong>Kierownik Zakładu</strong><br/>
-				Krzysztof Kuliński<br/>
-				t: 535-600-118<br/>
-				e: pwiksk@wp.pl
+				<strong>Specjalista ds. utrzymania</strong><br/>			
+				Jakub Rysmanowski<br/>
+				t: + 48 731-841-863<br/>
+				e: j.rysmanowski@rail-cars.pl
 			</div>
 		</div>
 		<div class="footerCol">
 			<p class="textYellow textUpper ls3 fontBold">Oddział Jaworzno</p>
 			<div class="footerCol--text">
 				Rail-Cars Sp. z o.o.<br/>
-				Oddział Krotoszyn<br/>
-				ul. Benicka 39<br/>
-				63-700 Krotoszyn
+				Zakład Jaworzno<br/>
+				ul. Bukowska 91<br/>
+				43-602 Jaworzno
 			</div>
 			<div class="footerCol--text">
-				<strong>Kierownik Zakładu</strong><br/>
-				Krzysztof Kuliński<br/>
-				t: 535-600-118<br/>
-				e: pwiksk@wp.pl
+				<strong>Dyrektor Zakładu</strong><br/>
+				Piotr Dziadkiewicz<br/>
+				t: +48 506 35 68 79<br/>
+				e: pd.rail-cars@wp.pl
 			</div>
 			<div class="footerCol--text">
-				<strong>Specjalista ds. utrzymania</strong><br/>
-				Anna Kulińska<br/>
-				t: +48 665-648-770<br/>
-				e: a.kulinska@rail-cars.pl<br/>
+				<strong>Pełnomocnik ds. MMS</strong><br/>
+				Sebastian Lukaszczyk<br/>
+				t: +48 537 673 181<br/>
+				e: sl.rail-cars@wp.pl
 			</div>
 		</div>
 	</div>
 	<div class="footerRight">
-		<a href="#scrollTop">
+		<a href="#scroll_top">
 			<svg xmlns="http://www.w3.org/2000/svg" width="48.065" height="48.065" viewBox="0 0 48.065 48.065">
 				<g id="arrow-right" transform="translate(0 48.065) rotate(-90)">
 					<path id="Path_2" data-name="Path 2" d="M24.032,0A24.033,24.033,0,1,0,48.065,24.032,24.032,24.032,0,0,0,24.032,0Zm0,45.662A21.629,21.629,0,1,1,45.662,24.032,21.629,21.629,0,0,1,24.032,45.662Zm0,0" fill="#fdcc12"/>

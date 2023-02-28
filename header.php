@@ -18,6 +18,7 @@
 	
 
 	<body <?php body_class()?>>
+		<div id="scroll_top"></div>
 		<header class="header">
 			<div class="headerInner">
 				

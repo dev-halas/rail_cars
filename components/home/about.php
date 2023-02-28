@@ -23,16 +23,16 @@
     </div>
     <div class="about-offer-wrapper">
         <div class="about-offer-container">
-            <div class="about-img-container">
+            <a href="<?php echo esc_url(home_url('/')) ?>offer/#offer-regeneration" class="about-img-container">
                 <img src="<?php echo THEME_URL; ?>_dev/img/about-regeneration.jpg" alt="zestawy kołowe" class="offerImg">
                 <div class="img-label">
-                    <h4>Regeneracja zestawów kołowych</h4>
+                    <h4>Naprawa zestawów kołowych</h4>
                     <svg class="about-offer-arrow" xmlns="http://www.w3.org/2000/svg" width="36.083" height="19.792" viewBox="0 0 36.083 19.792">
                         <path id="right-arrow-3" d="M26.187,107.5l-1.607,1.607,7.152,7.152H0v2.273H31.731l-7.152,7.152,1.607,1.607,9.9-9.9Z" transform="translate(0 -107.5)"/>
                     </svg>
                 </div>
-            </div>
-            <div class="about-img-container">
+            </a>
+            <a href="<?php echo esc_url(home_url('/')) ?>offer/#offer-repair" class="about-img-container">
                 <img src="<?php echo THEME_URL; ?>_dev/img/about-repair-1.jpg" alt="zestawy kołowe" class="offerImg">
                 <div class="img-label">
                     <h4>Naprawa wagonów kolejowych</h4>
@@ -40,8 +40,8 @@
                         <path id="right-arrow-3" d="M26.187,107.5l-1.607,1.607,7.152,7.152H0v2.273H31.731l-7.152,7.152,1.607,1.607,9.9-9.9Z" transform="translate(0 -107.5)"/>
                     </svg>
                 </div>
-            </div>
-            <div class="about-img-container">
+            </a>
+            <a href="<?php echo esc_url(home_url('/')) ?>offer/#offer-rent" class="about-img-container">
                 <img src="<?php echo THEME_URL; ?>_dev/img/about-renting.jpg" alt="zestawy kołowe" class="offerImg">
                 <div class="img-label">
                     <h4>Wynajem wagonów towarowych</h4>
@@ -49,8 +49,8 @@
                         <path id="right-arrow-3" d="M26.187,107.5l-1.607,1.607,7.152,7.152H0v2.273H31.731l-7.152,7.152,1.607,1.607,9.9-9.9Z" transform="translate(0 -107.5)"/>
                     </svg>
                 </div>
-            </div>
-            <div class="about-img-container">
+            </a>
+            <a href="<?php echo esc_url(home_url('/')) ?>offer/#offer-sell" class="about-img-container">
                 <img src="<?php echo THEME_URL; ?>_dev/img/about-repair-2.jpg" alt="zestawy kołowe" class="offerImg">
                 <div class="img-label">
                     <h4>Naprawa części kolejowych</h4>
@@ -58,10 +58,20 @@
                         <path id="right-arrow-3" d="M26.187,107.5l-1.607,1.607,7.152,7.152H0v2.273H31.731l-7.152,7.152,1.607,1.607,9.9-9.9Z" transform="translate(0 -107.5)"/>
                     </svg>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
     <div class="about-track-wrapper">
         <img src="<?php echo THEME_URL; ?>_dev/img/track.png" alt="tor" class="trackImg">
+    </div>
+    <div class="aboutCert">
+        <div class="aboutCert--col">
+            <h3>Posiadamy certyfikat</h3>
+            <p>Firma Rail-Cars Sp. z o.o. posiada certyfikat pełnienia funkcji podmiotu odpowiedzialnego za utrzymanie wagonów towarowych</p>
+        </div>
+        <a href="<?php echo esc_url(home_url('/')) ?>wp-content/uploads/2023/02/Certyfikat-ECM.pdf" target="_blank" class="aboutCert--col aboutCert--images">
+            <img src="<?php echo THEME_URL; ?>_dev/img/cert1.jpg" alt="cert">
+            <img src="<?php echo THEME_URL; ?>_dev/img/cert2.jpg" alt="cert">
+        </a>
     </div>
 </section>
