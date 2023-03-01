@@ -9,7 +9,7 @@
             <div class="offer-regeneration-effect">
                 <div class="offer-regeneration-before-after">
                     <h3 class="textYellow">przed</h3>
-                    <img src="<?php echo THEME_URL; ?>_dev/img/effect-before.jpg" alt="zestawy kołow">
+                    <img src="<?php echo THEME_URL; ?>_dev/img/eff-before.jpg" alt="zestawy kołow">
                 </div>
                 <div class="offer-regeneration-before-after">
                     <h3 class="textYellow">po</h3>

@@ -16,7 +16,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="36.083" height="19.792" viewBox="0 0 36.083 19.792">
                     <path id="right-arrow-3" d="M26.187,107.5l-1.607,1.607,7.152,7.152H0v2.273H31.731l-7.152,7.152,1.607,1.607,9.9-9.9Z" transform="translate(0 -107.5)"/>
                 </svg>
-                <p>Regeneracja zestawow <br/>kołowych</p>
+                <p>Naprawa zestawów <br/>kołowych</p>
             </a>
             <a href="<?php echo esc_url(home_url('/')) ?>offer/#offer-repair" class="heroInner--tile">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36.083" height="19.792" viewBox="0 0 36.083 19.792">

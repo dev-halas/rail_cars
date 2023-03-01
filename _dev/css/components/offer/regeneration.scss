@@ -235,6 +235,11 @@ h3 {
         grid-template-rows: repeat(12, 1fr);
         gap: 10px;
     }
+
+    img {
+        width: 100%;
+    }
+    
 }
     
 .div1 { grid-area: 1 / 1 / 5 / 3; }
