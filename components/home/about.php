@@ -24,7 +24,7 @@
     <div class="about-offer-wrapper">
         <div class="about-offer-container">
             <a href="<?php echo esc_url(home_url('/')) ?>offer/#offer-regeneration" class="about-img-container">
-                <img src="<?php echo THEME_URL; ?>_dev/img/about-regeneration.jpg" alt="zestawy kołowe" class="offerImg">
+                <img src="<?php echo THEME_URL; ?>_dev/img/offer-regeneracja2.jpg" alt="zestawy kołowe" class="offerImg">
                 <div class="img-label">
                     <h4>Naprawa zestawów kołowych</h4>
                     <svg class="about-offer-arrow" xmlns="http://www.w3.org/2000/svg" width="36.083" height="19.792" viewBox="0 0 36.083 19.792">
